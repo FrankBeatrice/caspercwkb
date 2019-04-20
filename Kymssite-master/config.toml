@@ -1,0 +1,86 @@
+BaseURL = "https://cannabiswithkymb.com/"
+disqusShortname = "cannabiswithkymb"
+languageCode = "en-US"
+paginate = 6
+theme = "casper-two"
+
+[[menu.main]]
+	name = "Honey Suckle"
+	url = "https://honeysucklemag.com/"
+	weight =5
+[[menu.main]]
+	name = "Canna Pop-up"
+	url = "https://cannapopup.com"
+	weight =6
+[[menu.main]]
+	name = "WomenGrow"
+	url = "https://womengrow.com/"
+	weight =7
+[[menu.main]]
+	name = "CannaBlis"
+	url = "/"
+	weight =8
+[[menu.main]]
+	name = "CannaGather "
+	url = "https://www.cannagather.com/"
+	weight =9
+[[menu.main]]
+	name = "NuggMD"
+	url = "https://kymb.nuggmd.com"
+	weight =10
+[[menu.main]]
+	name = "CBDizzle"
+	url = "https://www.cbdizzle.com/"
+	weight =11
+[[menu.main]]
+	name = "TribeTokes"
+	url = "https://www.tribetokes.com/"
+	weight = 12
+[[menu.main]]
+	name = "Coffee"
+	url = "https://flowerpower.coffee/"
+	weight = 13
+[[menu.main]]
+	name = "Featured"
+	url = "/articles"
+	weight = 14
+[[menu.main]]
+	name = "Articles"
+	url = "/articles"
+	weight = 15
+[[menu.main]]
+	name = "Subscribe"
+	url = "/subscribe"
+	weight = 16
+[[menu.main]]
+	name = "Home"
+	url = "/"
+	weight = 20
+
+[params]
+	RSSLink = ""
+	author = "Kym_B"
+	authorAvatar = "/uploads/favicon-96x96.png"
+	authorDescription = "Developer, Designer, Legend..."
+	authorLocation = "New York, NY"
+	authorWebsite = "https://www.cannabiswithkymb.com/"
+	cover = "uploads/CWKB_background.jpg"
+	postCover = "uploads/relatedpost_background.jpg"
+	description = "Kym_B's Awesome Blog"
+	twitterName = "cannabiswithkym"
+	fbName = "Cannabis-with-KymB-158958404674460"
+	igName = "cannabiswithkymb"
+	googleAnalytics = ""
+	logo = "uploads/logo.png"
+	metaDescription = ""
+	orgDescription = "Kym_B"
+	orgName = "Kym_B"
+	orgWebsite = "https://blog.chrisstayte.com"
+	pageNotFoundTitle = "404 - Page not found"
+	singleViewStyle = "casper"
+	subtitle = ""
+	title = ""
+
+[permalinks]
+	post = "/:slug/"
+

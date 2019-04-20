@@ -1,0 +1,56 @@
+{{ partial "head" . }}
+
+{{if ne .Site.Params.singleViewStyle "casper"}}<body class="ctsingle">
+{{else}}<body class="post-template">{{end}}
+  <div class="site-wrapper"> 
+
+{{ partial "header-author" . }}
+
+<main id="site-main" class="site-main outer" role="main" style="">
+  <div class="inner">
+    {{ $authorName := .File.BaseFileName  }}
+    <div class="author-posts">
+    {{ range $index, $element := (where .Site.Pages "Type" "post") }}
+       {{ if eq $element.Params.author $authorName }}
+          <div class="post-card">
+            {{if $element.Params.image}}
+            <a class="post-card-image-link" href="{{ .Permalink }}">
+              <div class="post-card-image" style="background-image: url({{$element.Params.image | absURL}})"></div>
+            </a>
+            {{else}}
+            <a class="post-card-image-link" href="{{ .Permalink }}">
+              <div class="post-card-image" style="background-image: url({{$.Site.BaseURL}}defimg/{{ index (seq 7 | shuffle) 0 }}.jpg)"></div>
+            </a>    
+            {{end}}
+
+            <div class="post-card-content">
+              <a class="post-card-content-link" href="{{ .Permalink }}">
+                  <header class="post-card-header">
+                      {{if $element.Params.tags }}<span class="post-card-tags">{{ range $index, $tag := $element.Params.tags }}
+                      #{{$tag}} {{end}} </span>
+                      {{ end }}
+                      <h2 class="post-card-title">{{$element.Params.title}}</h2>
+                  </header>
+                  <section class="post-card-excerpt">
+                      {{ if $element.Params.description }} 
+                        <p>{{ $element.Params.description | markdownify }}</p>
+                      {{end}}
+                  </section>
+              </a>
+            </div>
+          </div>
+        
+       {{ end }}
+    {{ end }}
+    </div>
+    {{ partial "disqus" . }}
+    
+  </div>
+</main>
+
+
+{{ partial "footer" . }}
+</div>
+{{ partial "js" . }}
+{{if eq .Site.Params.singleViewStyle "casper"}}{{ partial "js-sori" . }}{{end}}
+</body></html>
