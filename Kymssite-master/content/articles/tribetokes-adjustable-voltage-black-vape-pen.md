@@ -33,4 +33,3 @@ With the graduation and wedding season right around the corner, this is an excel
 
 [![button](/uploads/buy_button.jpg)](https://www.tribetokes.com/collections/home-page-collection-keybox-flip-battery/products/cbd-vape-starter-kit-black-battery-cartridge-save-15)
 
-[https://www.tribetokes.com/collections/home-page-collection-keybox-flip-battery/products/cbd-vape-starter-kit-black-battery-cartridge-save-15](https://www.tribetokes.com/collections/home-page-collection-keybox-flip-battery/products/cbd-vape-starter-kit-black-battery-cartridge-save-15 "https://www.tribetokes.com/collections/home-page-collection-keybox-flip-battery/products/cbd-vape-starter-kit-black-battery-cartridge-save-15")
